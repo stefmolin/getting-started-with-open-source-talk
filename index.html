@@ -1,0 +1,298 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Getting Started with Open Source Contributions &ndash; Stefanie Molin</title>
+        <link rel="shortcut icon" type="image/x-icon" href="/favicon/favicon.ico">
+
+		<link rel="stylesheet" href="https://unpkg.com/reveal.js@5.0.5/dist/reset.css">
+		<link rel="stylesheet" href="https://unpkg.com/reveal.js@5.0.5/dist/reveal.css">
+		<link rel="stylesheet" href="https://unpkg.com/reveal.js@5.0.5/dist/theme/simple.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="https://unpkg.com/reveal.js@5.0.5/plugin/highlight/github-dark.css">
+
+        <!-- Font Awesome icons -->
+        <link
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css"
+        rel="stylesheet" type="text/css">
+
+        <style type="text/css">
+            :root {
+                --r-heading1-size: 2em;
+                --r-heading2-size: 1.2em;
+                --r-heading3-size: 1em;
+                --r-heading4-size: 0.85em;
+            }
+            .reveal .slides>section {
+                text-align: left !important;
+            }
+            h6 {
+                font-size: 0.8em;
+            }
+            ul {
+                font-size: 0.75em;
+            }
+            ul>li:not(:last-child) {
+                margin-bottom: 0.5em;
+            }
+            .center {
+                text-align: center;
+            }
+            small {
+                font-size: 0.25em !important;
+                text-align: center;
+            }
+            .footer {
+                position: absolute;
+                bottom: 1.5em;
+                text-wrap: nowrap;
+                width: 100%;
+                text-align: center;
+                z-index: 100;
+                font-size: 0.5em;
+            }
+        </style>
+	</head>
+	<body>
+        <div class="reveal">
+            <div class="footer">
+                <a href="https://stefaniemolin.com">stefaniemolin.com</a>
+            </div>
+			<div class="slides">
+                <section>
+                    <h1 class="center">Getting Started with Open Source Contributions</h1>
+                    <br/>
+                    <br/>
+                    <h2 class="center">Stefanie Molin</h2>
+                </section>
+				<section>
+                    <h2>Bio</h2>
+                    <ul>
+                      <li>👩‍💻 Software engineer at Bloomberg in NYC</li>
+                      <li>✍ Author of "<a href="https://stefaniemolin.com/books/Hands-On-Data-Analysis-with-Pandas-2nd-edition/">Hands-On Data Analysis with Pandas</a>"</li>
+                      <li>🎓 BS in operations research from Columbia University</li>
+                      <li>🎓 MS in computer science (ML specialization) from Georgia Tech</li>
+                    </ul>
+                </section>
+                <section>
+                    <h2 class="center">Who can contribute to open source projects?</h2>
+                    <p class="fragment fade-in center">Everyone!</p>
+                </section>
+                <section>
+                    <h2 class="center">Don't I need to be an expert to contribute something meaningful?</h2>
+                    <p class="fragment fade-in center">Not at all!</p>
+                </section>
+                <section>
+                    <h2 class="center">How can I find something to work on?</h2>
+                </section>
+                <section>
+                    <h2>Brainstorm potential projects</h2>
+                    <h6 class="fragment fade-in" data-fragment-index="1">Make a list of the projects you frequently use now or have used in the past.</h6>
+                    <div class="fragment fade-in" style="padding-left: 2em;" data-fragment-index="1" >
+                        <p>1.</p>
+                        <p>2.</p>
+                        <p>3.</p>
+                        <p>4.</p>
+                        <p>5.</p>
+                    </div>
+                </section>
+                <section>
+                    <h2>Evaluate potential projects for suitability</h2>
+                    <div style="padding-left: 2em;">
+                        <p class="fragment fade-in-then-semi-out">1. Software license</p>
+                        <p class="fragment fade-in-then-semi-out">2. Recent activity</p>
+                        <p class="fragment fade-in-then-semi-out">3. Code base size</p>
+                        <p class="fragment fade-in-then-semi-out">4. Tech stack</p>
+                        <p class="fragment fade-in">5. Repository access</p>
+                    </div>
+                    <aside class="notes">
+                        <ul>
+                            <li>Which license is the software distributed with?</li>
+                            <li>Is the project still active? Has it been a long time since the project was last updated? Are people still using it?</li>
+                            <li>How big is the code base?</li>
+                            <li>Is the project built on top of another project that you are familiar with?</li>
+                            <li>Where is the project repository hosted? Is it public?</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2 class="center">How can I contribute to a project?</h2>
+                </section>
+                <section>
+                    <h2>Participate in sprints</h2>
+                    <div style="display: flex; justify-content: center;">
+                        <div style="width: 50%; margin-top: 0.5em;">
+                            <ul>
+                                <li class="fragment fade-in" data-fragment-index="1">Meet and work with some of the maintainers of a project.</li>
+                                <li class="fragment fade-in" data-fragment-index="2">Often, no prior experience with the project is necessary.</li>
+                                <li class="fragment fade-in" data-fragment-index="3">Maintainers curate a set of issues for the sprint and help people contribute.</li>
+                                <li class="fragment fade-in" data-fragment-index="4">Tremendous opportunity to learn from maintainers.</li>
+                            </ul>
+                        </div>
+                        <div style="float: right; padding: 0 1em;" class="fragment fade-in" data-fragment-index="1">
+                            <a href="https://twitter.com/StefanieM olin/status/1549492692228489216" rel="noopener noreferrer" target="_blank">
+                                <img src="images/first-sprint-tweet.png" height="500px">
+                            </a>
+                        </div>
+                    </div>
+                    <aside class="notes">
+                        <ul>
+                            <li>Meet and work with some of the maintainers of a project.</li>
+                            <li>Often, no prior experience with the project is necessary.</li>
+                            <li>Maintainers curate a set of issues for the sprint and help people contribute.</li>
+                            <li>Tremendous opportunity to learn from maintainers.</li>
+                        </ul>
+                    </aside>
+                </section>
+                <section>
+                    <h2>Contribute examples to the project documentation</h2>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <div style="width: 50%; margin-top: 0.5em;">
+                            <ul>
+                                <li class="fragment fade-in" data-fragment-index="1">Every project needs good documentation.</li>
+                                <li class="fragment fade-in" data-fragment-index="2">Writing documentation is time-intensive.</li>
+                                <li class="fragment fade-in" data-fragment-index="3">Contributing examples to the helps you learn about the functionality and helps others learn from the improved documentation.</li>
+                            </ul>
+                        </div>
+                        <div style="width: 50%; padding: 0 1em;" class="fragment fade-in" data-fragment-index="1">
+                            <a href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/" target="_blank">
+                                <img src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpy-docs.png">
+                            </a>
+                            <small><em>Screenshot of <a href="https://numpy.org/doc/stable/reference/generated/numpy.polynomial.polynomial.Polynomial.degree.html" rel="noopener noreferrer" target="_blank">NumPy's Polynomial.degree() documentation page</a> with examples from the merged pull request. (Source: Stefanie Molin)</em></small>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Browse open issues for ideas</h2>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <div style="width: 50%; margin-top: 0.5em;">
+                            <ul>
+                                <li class="fragment fade-in" data-fragment-index="1">Look for tags such as <b>good first issue</b>, <b>easy</b>, or <b>beginner</b>.</li>
+                                <li class="fragment fade-in" data-fragment-index="2">Don't disregard old issues, but make sure to check those changes are still desired.</li>
+                                <li class="fragment fade-in" data-fragment-index="3">Search for meta-issues.</li>
+                                <li class="fragment fade-in" data-fragment-index="4">Make sure to indicate that you are working on something by commenting on the issue.</li>
+                            </ul>
+                        </div>
+                        <div style="width: 50%; padding: 0 1em;" class="fragment fade-in" data-fragment-index="1">
+                            <a href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/" target="_blank">
+                                <img src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/open-issues.png">
+                            </a>
+                            <small><em>Screenshot of <a href="https://github.com/scikit-learn/scikit-learn/labels/good%20first%20issue" rel="noopener noreferrer" target="_blank">open issues tagged "good first issue" in the scikit-learn repository</a> as of July 24, 2023 11:44AM. (Source: Stefanie Molin)</em></small>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Identify and fix a bug</h2>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <div style="width: 60%; margin-top: 0.5em;">
+                            <ul>
+                                <li class="fragment fade-in" data-fragment-index="1">Is there a typo or omission in the documentation?</li>
+                                <li class="fragment fade-in" data-fragment-index="2">Does the software not work as expected?</li>
+                                <li class="fragment fade-in" data-fragment-index="3">Put in a bug report and volunteer to fix it if the maintainers agree it should be addressed.</li>
+                                <li class="fragment fade-in" data-fragment-index="4">Feel free to ask for help from the maintainers (you are helping them out by contributing).</li>
+                            </ul>
+                        </div>
+                        <div style="width: 40%; padding: 0 1em;" class="fragment fade-in" data-fragment-index="3">
+                            <a href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/" target="_blank">
+                                <img src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/bug-report.png">
+                            </a>
+                            <small><em>Screenshot of <a href="https://github.com/pandas-dev/pandas/issues/new?assignees=&labels=Bug%2CNeeds+Triage&projects=&template=bug_report.yaml&title=BUG%3A+" rel="noopener noreferrer" target="_blank">Bug Report issue template for the pandas GitHub repository</a> as of July 24, 2023 11:52AM. (Source: Stefanie Molin)</em></small>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2>Propose and implement a new feature</h2>
+                    <div style="display: flex; justify-content: center; align-items: center;">
+                        <div style="width: 60%; margin-top: 0.5em;">
+                            <ul>
+                                <li class="fragment fade-in" data-fragment-index="1">What are the pain points of using the software? Is there something that could be done to address them?</li>
+                                <li class="fragment fade-in" data-fragment-index="2">Is there a feature missing?</li>
+                                <li class="fragment fade-in" data-fragment-index="3">Share your idea with the maintainers and work on it if it is accepted.</li>
+                                <li class="fragment fade-in" data-fragment-index="4">Don't take things personally.</li>
+                                <li class="fragment fade-in" data-fragment-index="5">Always be polite.</li>
+                            </ul>
+                        </div>
+                        <div style="width: 40%; padding: 0 1em;" class="fragment fade-in" data-fragment-index="3">
+                            <a href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/" target="_blank">
+                                <img src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpydoc-validation-feature.png">
+                            </a>
+                            <small><em>Screenshot of <a href="https://github.com/numpy/numpydoc/issues/450" rel="noopener noreferrer" target="_blank">issue #450 in the numpydoc GitHub repository</a>, which proposes incorporating a pre-commit hook for numpydoc validation. (Source: Stefanie Molin)</em></small>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <h2 class="center">No contribution is too small.</h2>
+                    <aside class="notes">Tailor your contribution to your comfort level.</aside>
+                </section>
+                <section>
+                    <h2 class="center">Found something to work on?</h2>
+                </section>
+				<section>
+                    <h2>Tips for success ✨</h2>
+                    <ul>
+                        <li class="fragment fade-in" data-fragment-index="1">Make sure to follow any setup instructions the project provides for contributors. This may be in the documentation or in a contributing guide in the repository.</li>
+                        <li class="fragment fade-in" data-fragment-index="2">If you are completely new to development, start with documentation-based contributions, while you get comfortable working with tools like Git and GitHub. If you can, attend a sprint or perhaps a local meetup for your preferred programming language.</li>
+                        <li class="fragment fade-in" data-fragment-index="3">Remember to be kind and patient in all your interactions with a project. Most maintainers are doing this outside of their regular work &ndash; it might take some time for them to review everything.</li>
+                    </ul>
+                </section>
+				<section>
+                    <h2 class="center">Questions?</h2>
+                </section>
+				<section>
+                    <h2 id="Thank-you!">Thank you!</h2>
+                    <p style="font-size: 0.65em;"><em>I hope you enjoyed the talk. You can follow my work on the following platforms:</em></p>
+                    <div style="display: flex; justify-content: space-evenly; align-items: center;">
+                        <div style="text-align: center; width: 30%;">
+                            <img class="qr-code" src="https://raw.githubusercontent.com/stefmolin/pandas-workshop/main/media/qr-code.png">
+                        </div>
+                        <div style="font-size: 0.85em;">
+                            <div style="display: flex; justify-content: flex-start; align-items: center;">
+                                <i class="fa fa-globe fa-fw" style="padding-right: 4px"></i>
+                                <a href="https://stefaniemolin.com" rel="noopener noreferrer">
+                                    stefaniemolin.com
+                                </a>
+                            </div>
+                            <div style="display: flex; justify-content: flex-start; align-items: center;">
+                                <i class="fab fa-github fa-fw" style="padding-right: 4px"></i>
+                                <a href="https://github.com/stefmolin" rel="noopener noreferrer" target="_blank">
+                                github.com/stefmolin
+                                </a>
+                            </div>
+                            <div style="display: flex; justify-content: flex-start; align-items: center;">
+                                <i class="fab fa-twitter fa-fw" style="padding-right: 4px"></i>
+                                <a href="https://twitter.com/StefanieMolin" rel="noopener noreferrer" target="_blank">
+                                twitter.com/StefanieMolin
+                                </a>
+                            </div>
+                            <div style="display: flex; justify-content: flex-start; align-items: center;">
+                                <i class="fab fa-linkedin fa-fw" style="padding-right: 4px"></i>
+                                <a href="https://linkedin.com/in/stefanie-molin" rel="noopener noreferrer" target="_blank">
+                                linkedin.com/in/stefanie-molin
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+			</div>
+		</div>
+
+		<script src="https://unpkg.com/reveal.js@5.0.5/dist/reveal.js"></script>
+		<script src="https://unpkg.com/reveal.js@5.0.5/plugin/notes/notes.js"></script>
+		<script src="https://unpkg.com/reveal.js@5.0.5/plugin/markdown/markdown.js"></script>
+		<script src="https://unpkg.com/reveal.js@5.0.5/plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
