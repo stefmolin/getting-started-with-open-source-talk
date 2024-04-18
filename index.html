@@ -103,10 +103,12 @@
       h6 {
         font-size: 0.8em;
       }
-      ul {
+      ul,
+      ol {
         font-size: 0.75em;
       }
-      ul > li:not(:last-child) {
+      ul > li:not(:last-child),
+      ol > li:not(:last-child) {
         margin-bottom: 0.5em;
       }
       .center {
@@ -156,6 +158,16 @@
           </ul>
         </section>
         <section>
+          <h2>Agenda</h2>
+          <ol>
+            <li>Open source contribution myths</li>
+            <li>Finding a project to work on</li>
+            <li>Identifying a way to contribute</li>
+            <li>Making your contribution</li>
+            <li>Q&A</li>
+          </ol>
+        </section>
+        <section>
           <h1 class="center">Let's dispel some myths.</h1>
         </section>
         <section>
@@ -190,11 +202,6 @@
               feature?
             </p>
           </aside>
-        </section>
-        <section>
-          <h1 class="center">
-            How to get started with open source contributions
-          </h1>
         </section>
         <section>
           <h1 class="center">Find a project to work on</h1>
@@ -285,7 +292,7 @@
           </aside>
         </section>
         <section>
-          <h1 class="center">Find a way to contribute</h1>
+          <h1 class="center">Identify a way to contribute</h1>
           <aside class="notes">
             <p>
               Hopefully, some of the projects you brainstormed are suitable.
@@ -549,7 +556,7 @@
           </div>
         </section>
         <section>
-          <h1 class="center">No contribution is too small.</h1>
+          <h2 class="center">No contribution is too small.</h2>
           <aside class="notes">
             <p>
               I presented the five strategies in order of the level of
@@ -560,8 +567,7 @@
           </aside>
         </section>
         <section>
-          <h1 class="center">Found something?</h1>
-          <h2 class="center fragment fade-in">Claim it, and get to work.</h2>
+          <h1 class="center">Making your contribution</h1>
           <aside class="notes">
             <p>
               Once you have found something that you would like to work on, make
@@ -575,22 +581,31 @@
           <h2>Tips for success ✨</h2>
           <ul>
             <li class="fragment fade-in" data-fragment-index="1">
-              Follow any <b>setup instructions</b> the project provides.
+              Let the maintainers (and the world) know what you are working on.
             </li>
             <li class="fragment fade-in" data-fragment-index="2">
+              Follow any <b>setup instructions</b> the project provides.
+            </li>
+            <li class="fragment fade-in" data-fragment-index="3">
               New to development? Start with documentation-based contributions,
               while you get comfortable working with tools like Git and GitHub.
             </li>
-            <li class="fragment fade-in" data-fragment-index="3">
+            <li class="fragment fade-in" data-fragment-index="4">
               If you can, attend a sprint or perhaps a local meetup for your
               preferred programming language.
             </li>
-            <li class="fragment fade-in" data-fragment-index="4">
+            <li class="fragment fade-in" data-fragment-index="5">
               Be <b>polite</b> and <b>patient</b> in all interactions.
             </li>
           </ul>
           <aside class="notes">
             <ul>
+              <li>
+                Once you have found something that you would like to work on,
+                make sure you claim it (<em>e.g.</em>, by commenting on the
+                issue). This keeps the maintainers in the loop and prevents
+                duplication of efforts.
+              </li>
               <li>
                 Make sure to follow any setup instructions the project provides
                 for contributors. This may be in the documentation or in a
@@ -741,10 +756,3 @@
     </script>
   </body>
 </html>
-
-<!-- TODO: add references section at the end and point people to my article (and
-potentially the podcast? -- probably not) -->
-<!-- TODO for the slides with images on
-the right, could have a slide just before it that shows the title and the image
-in the center (same height) so that when showing the bullets, it looks like it
-moved?-->
