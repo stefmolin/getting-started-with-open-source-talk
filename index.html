@@ -310,7 +310,7 @@
             </p>
           </aside>
         </section>
-        <section>
+        <section data-transition="slide-in none-out">
           <h2>#1. Participate in sprints</h2>
         </section>
         <section data-transition="zoom-in none-out">
@@ -404,49 +404,63 @@
             </ul>
           </aside>
         </section>
-        <section>
+        <section data-transition="slide-in none-out">
           <h2>#2. Contribute examples to the documentation</h2>
-          <div
-            style="display: flex; justify-content: center; align-items: center">
-            <div style="width: 50%; margin-top: 0.5em">
-              <ul>
-                <li class="fragment fade-in" data-fragment-index="1">
-                  Every project needs good documentation.
-                </li>
-                <li class="fragment fade-in" data-fragment-index="2">
-                  Writing documentation is time-intensive.
-                </li>
-                <li class="fragment fade-in" data-fragment-index="3">
-                  Contributing examples to the helps you learn about the
-                  functionality and helps others learn from the improved
-                  documentation.
-                </li>
-              </ul>
-            </div>
-            <div
-              style="width: 50%; padding: 0 1em"
-              class="fragment fade-in"
-              data-fragment-index="1">
-              <a
-                href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/"
-                target="_blank">
-                <img
-                  src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpy-docs.png" />
-              </a>
-              <small
-                ><em
-                  >Screenshot of
-                  <a
-                    href="https://numpy.org/doc/stable/reference/generated/numpy.polynomial.polynomial.Polynomial.degree.html"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >NumPy's Polynomial.degree() documentation page</a
-                  >
-                  with examples from the merged pull request. (Source: Stefanie
-                  Molin)</em
-                ></small
-              >
-            </div>
+          <aside class="notes">
+            <p>
+              Have you ever looked at a project's documentation and had trouble
+              figuring out how to use it? Were there examples? Could they have
+              been improved?
+            </p>
+          </aside>
+        </section>
+        <section data-transition="zoom">
+          <div class="center">
+            <a
+              href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/"
+              rel="noopener noreferrer"
+              target="_blank">
+              <img
+                src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpy-docs.png" />
+            </a>
+            <small
+              ><em
+                >Screenshot of
+                <a
+                  href="https://numpy.org/doc/stable/reference/generated/numpy.polynomial.polynomial.Polynomial.degree.html"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >NumPy's Polynomial.degree() documentation page</a
+                >
+                with contributed examples. (Source: Stefanie Molin)</em
+              ></small
+            >
+          </div>
+          <aside class="notes">
+            <p>
+              Examples help clarify usage. Here's an example I added to NumPy
+              after figuring out how the coefficients needed to be passed in for
+              my use case.
+            </p>
+          </aside>
+        </section>
+        <section data-transition="none">
+          <h2>Contribute examples to the documentation</h2>
+          <div>
+            <ul>
+              <li class="fragment fade-in" data-fragment-index="1">
+                Every project needs good documentation.
+              </li>
+              <li class="fragment fade-in" data-fragment-index="2">
+                Writing documentation is time-intensive.
+              </li>
+              <li class="fragment fade-in" data-fragment-index="3">
+                Contributing examples helps you learn about the functionality.
+              </li>
+              <li class="fragment fade-in" data-fragment-index="4">
+                Examples help others learn.
+              </li>
+            </ul>
           </div>
           <aside class="notes">
             <ul>
