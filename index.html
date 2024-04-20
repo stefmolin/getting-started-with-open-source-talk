@@ -418,7 +418,6 @@
           <div class="center">
             <a
               href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/"
-              rel="noopener noreferrer"
               target="_blank">
               <img
                 src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpy-docs.png" />
@@ -490,7 +489,7 @@
         <section data-transition="zoom">
           <div class="center">
             <a
-              href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/"
+              href="https://github.com/scikit-learn/scikit-learn/labels/good%20first%20issue"
               rel="noopener noreferrer"
               target="_blank">
               <img
@@ -580,65 +579,86 @@
             </p>
           </aside>
         </section>
-        <section>
-          <h2>4. Identify and fix a bug</h2>
-          <div
-            style="display: flex; justify-content: center; align-items: center">
-            <div style="width: 60%; margin-top: 0.5em">
-              <ul>
-                <li class="fragment fade-in" data-fragment-index="1">
-                  Is there a typo or omission in the documentation?
-                </li>
-                <li class="fragment fade-in" data-fragment-index="2">
-                  Does the software not work as expected?
-                </li>
-                <li class="fragment fade-in" data-fragment-index="3">
-                  Put in a bug report and volunteer to fix it if the maintainers
-                  agree it should be addressed.
-                </li>
-                <li class="fragment fade-in" data-fragment-index="4">
-                  Feel free to ask the maintainers for guidance.
-                </li>
-              </ul>
-            </div>
-            <div
-              style="width: 40%; padding: 0 1em"
-              class="fragment fade-in"
-              data-fragment-index="3">
-              <a
-                href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/"
-                target="_blank">
-                <img
-                  src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/bug-report.png" />
-              </a>
-              <small
-                ><em
-                  >Screenshot of
-                  <a
-                    href="https://github.com/pandas-dev/pandas/issues/new?assignees=&labels=Bug%2CNeeds+Triage&projects=&template=bug_report.yaml&title=BUG%3A+"
-                    rel="noopener noreferrer"
-                    target="_blank"
-                    >Bug Report issue template for the pandas GitHub
-                    repository</a
-                  >
-                  as of July 24, 2023 11:52AM. (Source: Stefanie Molin)</em
-                ></small
-              >
-            </div>
+        <section data-transition="slide-in none-out">
+          <h2>#4. Identify and fix a bug</h2>
+          <aside class="notes">
+            <p>
+              Finding a bug that no one else has found often requires heavy-use
+              of the project.
+            </p>
+            <ul>
+              <li>Is there a typo or omission in the documentation?</li>
+              <li>Does the software not work as expected?</li>
+            </ul>
+          </aside>
+        </section>
+        <section data-transition="zoom">
+          <div class="center">
+            <a
+              href="https://github.com/pandas-dev/pandas/issues/new?assignees=&labels=Bug%2CNeeds+Triage&projects=&template=bug_report.yaml&title=BUG%3A+"
+              rel="noopener noreferrer"
+              target="_blank">
+              <img
+                src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/bug-report.png"
+                height="500px" />
+            </a>
+            <small
+              ><em
+                >Screenshot of
+                <a
+                  href="https://github.com/pandas-dev/pandas/issues/new?assignees=&labels=Bug%2CNeeds+Triage&projects=&template=bug_report.yaml&title=BUG%3A+"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >Bug Report issue template for the pandas GitHub repository</a
+                >
+                as of July 24, 2023 11:52AM. (Source: Stefanie Molin)</em
+              ></small
+            >
+          </div>
+          <aside class="notes">
+            <p>
+              If you find something that hasn't been previously reported, file a
+              bug report.
+            </p>
+          </aside>
+        </section>
+        <section data-transition="none">
+          <h2>Tips💡</h2>
+          <div>
+            <ul>
+              <li class="fragment fade-in" data-fragment-index="1">
+                Check if the bug has already been reported.
+              </li>
+              <li class="fragment fade-in" data-fragment-index="2">
+                Put in a detailed, reproducible bug report.
+              </li>
+              <li class="fragment fade-in" data-fragment-index="3">
+                Volunteer to fix the bug after the maintainers triage it.
+              </li>
+              <li class="fragment fade-in" data-fragment-index="4">
+                Feel free to ask the maintainers for guidance.
+              </li>
+            </ul>
           </div>
           <aside class="notes">
             <ul>
               <li>
-                Finding a bug that no one else has found often requires
-                heavy-use of the project.
+                Make sure that someone else hasn't already reported this bug.
+                Check open and closed issues.
+              </li>
+              <li>
+                Your bug report should contain all the information necessary for
+                others to reproduce the bug. If there is a bug report template,
+                be sure to provide all information requested.
               </li>
               <li>
                 Make sure the maintainers agree it is a bug before starting work
                 (you don't want to waste your time on something that won't be
-                merged).
+                merged). You can even volunteer to fix a bug reported by someone
+                else.
               </li>
               <li>
-                You can still volunteer to fix the bug if you aren't sure where
+                You can volunteer to fix the bug even if you aren't sure where
                 you should start. Ask the maintainers for guidance to get you
                 started.
               </li>
