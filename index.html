@@ -4,7 +4,8 @@
     <!-- Google tag (gtag.js) -->
     <script
       async
-      src="https://www.googletagmanager.com/gtag/js?id=G-25389D1SR4"></script>
+      src="https://www.googletagmanager.com/gtag/js?id=G-25389D1SR4"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
       function gtag() {
@@ -18,7 +19,8 @@
     <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
     <meta name="robots" content="index,follow" />
     <meta name="keywords" content="technology, open source, slides, Python" />
@@ -33,24 +35,30 @@
     <meta name="referrer" content="origin" />
     <meta
       property="og:url"
-      content="https://stefaniemolin.com/getting-started-with-open-source-talk/" />
+      content="https://stefaniemolin.com/getting-started-with-open-source-talk/"
+    />
     <meta
       property="og:title"
-      content="Getting Started with Open Source Contributions | Stefanie Molin" />
+      content="Getting Started with Open Source Contributions | Stefanie Molin"
+    />
     <meta
       name="description"
-      content="The open source community is all about giving back and learning from one another. No matter how small, every contribution is valuable. And everyone can contribute something with a little bit of help." />
+      content="The open source community is all about giving back and learning from one another. No matter how small, every contribution is valuable. And everyone can contribute something with a little bit of help."
+    />
     <meta
       property="og:description"
-      content="The open source community is all about giving back and learning from one another. No matter how small, every contribution is valuable. And everyone can contribute something with a little bit of help." />
+      content="The open source community is all about giving back and learning from one another. No matter how small, every contribution is valuable. And everyone can contribute something with a little bit of help."
+    />
     <meta
       property="og:image"
-      content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/stefaniemolin.com/Getting%20Started%20with%20Open%20Source%20Contributions%20%7C%20talk%20by%20Stefanie%20Molin/https%3A%2F%2Fstefaniemolin.com%2Fgetting-started-with-open-source-talk%2Fimages%2Fcover.jpeg/og.png" />
+      content="https://ogcdn.net/e4b8c678-7bd5-445d-ba03-bfaad510c686/v3/stefaniemolin.com/Getting%20Started%20with%20Open%20Source%20Contributions%20%7C%20talk%20by%20Stefanie%20Molin/https%3A%2F%2Fstefaniemolin.com%2Fgetting-started-with-open-source-talk%2Fimages%2Fcover.jpeg/og.png"
+    />
     <meta property="og:image:width" content="2160" />
     <meta property="og:image:height" content="1440" />
     <meta
       property="og:image:alt"
-      content="Getting Started with Open Source Contributions" />
+      content="Getting Started with Open Source Contributions"
+    />
 
     <title>
       Getting Started with Open Source Contributions | Stefanie Molin
@@ -60,43 +68,52 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/favicon/apple-touch-icon.png" />
+      href="/favicon/apple-touch-icon.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicon/favicon-32x32.png" />
+      href="/favicon/favicon-32x32.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicon/favicon-16x16.png" />
+      href="/favicon/favicon-16x16.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/favicon/android-chrome-192x192.png" />
+      href="/favicon/android-chrome-192x192.png"
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="512x512"
-      href="/favicon/android-chrome-512x512.png" />
+      href="/favicon/android-chrome-512x512.png"
+    />
 
     <link
       rel="stylesheet"
-      href="https://unpkg.com/reveal.js@5.0.5/dist/reset.css" />
+      href="https://unpkg.com/reveal.js@5.0.5/dist/reset.css"
+    />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/reveal.js@5.0.5/dist/reveal.css" />
+      href="https://unpkg.com/reveal.js@5.0.5/dist/reveal.css"
+    />
     <link
       rel="stylesheet"
-      href="https://unpkg.com/reveal.js@5.0.5/dist/theme/simple.css" />
+      href="https://unpkg.com/reveal.js@5.0.5/dist/theme/simple.css"
+    />
 
     <!-- Font Awesome icons -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.1.1/css/all.min.css"
       rel="stylesheet"
-      type="text/css" />
+      type="text/css"
+    />
 
     <style type="text/css">
       :root {
@@ -105,7 +122,9 @@
         --r-heading3-size: 1em;
         --r-heading4-size: 0.85em;
       }
-      .reveal .slides > section {
+      .reveal .slides > section,
+      .reveal .pdf-page > section,
+      .reveal .slides > .scroll-page {
         text-align: left !important;
       }
       h6 {
@@ -128,38 +147,36 @@
       }
       .footer {
         position: absolute;
-        bottom: 25px;
-        text-wrap: nowrap;
-        width: 100%;
-        text-align: center;
-        z-index: 100;
-        font-size: 0.75em;
-      }
-      .license {
-        position: absolute;
         bottom: 10px;
         text-wrap: nowrap;
         width: 100%;
         text-align: center;
         z-index: 100;
-        font-size: 0.25em;
+        font-size: 4vmin;
+      }
+      .license {
+        font-size: 1.5vmin;
+        padding-top: 0.5vmin;
       }
     </style>
   </head>
   <body>
     <div class="reveal">
-      <div class="license">
-        License:
-        <a
-          href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
-          style="z-index: 1"
-          target="_blank"
-          rel="noopener noreferrer">
-          CC BY-NC-SA 4.0
-        </a>
-      </div>
-      <div class="footer">
-        <a href="https://stefaniemolin.com">stefaniemolin.com</a>
+      <div id="footer-info" style="display: none">
+        <div class="footer">
+          <a href="https://stefaniemolin.com">stefaniemolin.com</a>
+          <div class="license">
+            License:
+            <a
+              href="http://creativecommons.org/licenses/by-nc-sa/4.0/"
+              style="z-index: 1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              CC BY-NC-SA 4.0
+            </a>
+          </div>
+        </div>
       </div>
       <div class="slides">
         <section>
@@ -171,7 +188,7 @@
         <section>
           <h2>Bio</h2>
           <ul>
-            <li>👩‍💻 Software engineer at Bloomberg in NYC</li>
+            <li>👩🏻‍💻 Software engineer at Bloomberg in NYC</li>
             <li>
               🚀 Core developer of
               <a
@@ -343,7 +360,8 @@
             <a
               href="https://twitter.com/StefanieMolin/status/1549492692228489216"
               rel="noopener noreferrer"
-              target="_blank">
+              target="_blank"
+            >
               <img src="images/first-sprint-tweet.png" height="500px" />
             </a>
           </div>
@@ -356,7 +374,8 @@
             <a
               href="https://twitter.com/StefanieMolin/status/1549492692228489216"
               rel="noopener noreferrer"
-              target="_blank">
+              target="_blank"
+            >
               <img src="images/first-sprint.jpeg" />
             </a>
             <small style="margin-top: -1em"
@@ -458,9 +477,11 @@
           <div class="center">
             <a
               href="https://stefaniemolin.com/articles/open-source/5-ways-to-get-started-in-open-source/"
-              target="_blank">
+              target="_blank"
+            >
               <img
-                src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpy-docs.png" />
+                src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpy-docs.png"
+              />
             </a>
             <small
               ><em
@@ -531,9 +552,11 @@
             <a
               href="https://github.com/scikit-learn/scikit-learn/labels/good%20first%20issue"
               rel="noopener noreferrer"
-              target="_blank">
+              target="_blank"
+            >
               <img
-                src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/open-issues.png" />
+                src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/open-issues.png"
+              />
             </a>
             <small
               ><em
@@ -645,10 +668,12 @@
             <a
               href="https://github.com/pandas-dev/pandas/issues/new?assignees=&labels=Bug%2CNeeds+Triage&projects=&template=bug_report.yaml&title=BUG%3A+"
               rel="noopener noreferrer"
-              target="_blank">
+              target="_blank"
+            >
               <img
                 src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/bug-report.png"
-                height="500px" />
+                height="500px"
+              />
             </a>
             <small
               ><em
@@ -743,9 +768,11 @@
             <a
               href="https://github.com/numpy/numpydoc/issues/450"
               rel="noopener noreferrer"
-              target="_blank">
+              target="_blank"
+            >
               <img
-                src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpydoc-validation-feature.png" />
+                src="https://stefaniemolin.com/assets/articles/open-source/5-ways-to-get-started-in-open-source/numpydoc-validation-feature.png"
+              />
             </a>
             <small
               ><em
@@ -927,17 +954,20 @@
               display: flex;
               justify-content: space-evenly;
               align-items: center;
-            ">
+            "
+          >
             <div style="text-align: center; width: 30%">
               <img
                 class="qr-code"
-                src="https://raw.githubusercontent.com/stefmolin/pandas-workshop/main/media/qr-code.png" />
+                src="https://raw.githubusercontent.com/stefmolin/pandas-workshop/main/media/qr-code.png"
+              />
             </div>
             <div style="font-size: 0.85em">
               <div style="display: flex">
                 <i
                   class="fa fa-globe fa-fw"
-                  style="padding-right: 4px; margin: auto 0"></i>
+                  style="padding-right: 4px; margin: auto 0"
+                ></i>
                 <a href="https://stefaniemolin.com" rel="noopener noreferrer">
                   stefaniemolin.com
                 </a>
@@ -945,33 +975,39 @@
               <div style="display: flex">
                 <i
                   class="fab fa-github fa-fw"
-                  style="padding-right: 4px; margin: auto 0"></i>
+                  style="padding-right: 4px; margin: auto 0"
+                ></i>
                 <a
                   href="https://github.com/stefmolin"
                   rel="noopener noreferrer"
-                  target="_blank">
+                  target="_blank"
+                >
                   github.com/stefmolin
                 </a>
               </div>
               <div style="display: flex">
                 <i
                   class="fab fa-twitter fa-fw"
-                  style="padding-right: 4px; margin: auto 0"></i>
+                  style="padding-right: 4px; margin: auto 0"
+                ></i>
                 <a
                   href="https://twitter.com/StefanieMolin"
                   rel="noopener noreferrer"
-                  target="_blank">
+                  target="_blank"
+                >
                   twitter.com/StefanieMolin
                 </a>
               </div>
               <div style="display: flex">
                 <i
                   class="fab fa-linkedin fa-fw"
-                  style="padding-right: 4px; margin: auto 0"></i>
+                  style="padding-right: 4px; margin: auto 0"
+                ></i>
                 <a
                   href="https://linkedin.com/in/stefanie-molin"
                   rel="noopener noreferrer"
-                  target="_blank">
+                  target="_blank"
+                >
                   linkedin.com/in/stefanie-molin
                 </a>
               </div>
@@ -989,6 +1025,11 @@
 
     <script src="https://unpkg.com/reveal.js@5.0.5/dist/reveal.js"></script>
     <script src="https://unpkg.com/reveal.js@5.0.5/plugin/notes/notes.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.slim.min.js"
+      integrity="sha256-kmHvs0B+OpCW5GVHUNjv9rOmY0IvSIRcf7zGUDTDQM8="
+      crossorigin="anonymous"
+    ></script>
     <script>
       // More info about initialization & config:
       // - https://revealjs.com/initialization/
@@ -1000,6 +1041,13 @@
         // Learn about plugins: https://revealjs.com/plugins/
         plugins: [RevealNotes],
       });
+
+      // make sure the footer shows up on the PDF version and the regular slides
+      const footer = $("#footer-info").html();
+      Reveal.addEventListener("ready", function (event) {
+        $(".slide-background").append(footer);
+      });
+      $("div.reveal").append(footer);
     </script>
   </body>
 </html>
